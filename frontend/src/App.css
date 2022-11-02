@@ -1,0 +1,157 @@
+* {
+  margin: 0 auto;
+  background-attachment: fixed;
+}
+
+:root {
+  --main-color: #80d90c;
+  --second-color: #fff;
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(31, 214, 71, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
+}
+section {
+  max-width: 1360px;
+  margin: 5% auto;
+}
+.single-products {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+}
+.right-side,
+.left-side {
+  width: 50%;
+}
+.single-products .left-side img {
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+
+.single-products .right-side .description p {
+  font-size: 15px;
+  color: #151515;
+  margin: 30px 0 0;
+  min-width: 300px;
+  overflow: auto;
+}
+.single-products .right-side .title-details h3 {
+  font-size: 2.25rem;
+  color: #151515;
+}
+.single-products .right-side .price-details .price-card p {
+  font-size: 24px;
+  color: var(--main-color);
+  margin: 0px 0px 20px;
+}
+.action {
+  display: inline-flex;
+  margin: 30px auto;
+}
+
+.action .selectQty select {
+  padding: 19px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.action button {
+  cursor: pointer;
+  padding: 19px 30px;
+  white-space: nowrap;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  background: #80d90c;
+  font-size: 14px;
+  transition: 200ms;
+}
+.action button:hover {
+  background: #fff;
+  border: 1px solid #80d90c;
+  color: #80d90c;
+}
+.right-side .nutrition-information {
+  margin: 20px 0 0 0;
+}
+.right-side .nutrition-information h3 {
+  font-size: 24px;
+  text-decoration: underline;
+}
+.sales-details-price h4 {
+  color: white;
+  font-size: 20px;
+}
+
+.sales-price {
+  display: flex;
+  align-items: center;
+}
+.sales-price h3 {
+  color: red;
+  
+}
+.sales-price h4 {
+  margin-left: 10px;
+  font-size: 14px;
+  margin-right: 15px; 
+  text-decoration: line-through;
+}
+.sales-details-price h4 {
+  color: red;
+}
+
+.pagination {
+    display: inline-block;  
+}
+.rs-pagination-btn {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  margin: 20px 0 20px 0;
+}
+
+.rs-pagination-btn.rs-pagination-btn-active {
+    background-color: #80d90c;
+    color: white;
+    border-radius: 5px;
+}
+.carousel-price {
+  color: red;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+/*RESPONSIVE */
+@media (max-width: 991px) {
+  section {
+    padding: 2rem;
+    transition: all 250ms ease-in-out;
+  }
+  .single-products {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    transition: all 250ms ease-in-out;
+    padding: 2rem;
+  }
+  .single-products {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

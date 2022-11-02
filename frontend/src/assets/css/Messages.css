@@ -1,0 +1,32 @@
+/*ERROR MESSAGE*/
+:root {
+  --main-color: #80d90c;
+  --second-color: #80d90c;
+}
+.alert {
+  padding: 10px;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+
+  /* width: 70%; */
+  text-align: center;
+  /* margin-left: 40px; */
+}
+.alert-info {
+  color: #69b804;;
+  background-color: #fff;
+  border: 3px solid #69b804;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 50px;
+}
+.alert-success {
+  color: #80d90c;
+  background-color: #eeffe0;
+}
+.alert-danger {
+  border: 1px solid red;
+  background-color: #fa6257;
+  margin: 20px;
+  color: white;
+}

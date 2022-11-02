@@ -1,0 +1,233 @@
+:root {
+  --main-color: #c75f1f;
+  --second-color: #e07938;
+}
+.shipping {
+  height: 100vh;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+}
+.shipping-form {
+  position: absolute;
+
+  margin-top: 50px;
+}
+.shipping-form h3 {
+  text-align: center;
+  color: #151515;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid #82b74b;
+}
+.inputbox {
+  padding: 20px;
+  transition: 0.3 ease-in-out;
+}
+.inputbox input {
+  width: 450px;
+  height: 60px;
+  padding: 17px 0;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
+  overflow: visible;
+}
+.inputbox input:hover {
+  outline: none;
+}
+.shipping-button button {
+  color: #fff;
+  background-color: #6ab804;
+  padding: 18px 22px;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  text-align: right;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 30px 350px;
+}
+.shipping-button button[disabled] {
+  background-color: #a0e05c;
+}
+
+/*PAYMENT*/
+
+.form-box {
+  max-width: 500px;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  position: relative;
+  padding: 40px;
+  border-radius: 2px;
+  transform: translateY(130px);
+  margin: 0 auto;
+  border: 2px solid #82b74b;
+}
+.form-box h2 {
+  color: #ffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.form-box label input {
+  display: none;
+}
+.form-box label {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 30px;
+  padding-left: 55px;
+  position: relative;
+}
+.form-box label .circle {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ffff;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  transition: border-color 0.5s ease;
+}
+.form-box label .circle::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: #ffff;
+  position: absolute;
+  left: 2px;
+  top: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin-left: 7px;
+  margin-top: 7px;
+  transition: transform 0.5s ease;
+  transform: scale(0);
+}
+.form-box label span {
+  font-size: 1.375rem;
+  color: #ffff;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: color 0.5s ease;
+}
+.form-box label input:checked + .circle {
+  border-color: #ffff;
+}
+.form-box label input:checked + .circle::before {
+  transform: scale(1);
+}
+.form-box label input:checked + .circle + span {
+  color: #ffff;
+}
+.form-box button {
+  background: none;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: 1.563rem;
+  margin: 50px -40px;
+}
+.form-box button:hover {
+  font-size: 1.563rem;
+  border-bottom: 1px solid var(--main-color);
+  transition: 5ms;
+}
+
+/*PLACE ORDER-ORDER*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px 50px 100px;
+  padding: 0 50px;
+  max-width: 100%;
+}
+
+.flex-container table {
+  border: 2px solid var(--main-color);
+  background-color: #f8f8f8f8;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.flex-container table tr {
+  border-bottom: 1px solid #16a085;
+}
+.flex-container table tr td {
+  /* white-space: pre-line; */
+  color: #151515;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  /* padding: 22px 40px 22px 24px;
+  margin-right: -50px; */
+  margin: 24px 24px 24px 24px;
+  padding: 24px 24px 24px 24px;
+}
+.flex-container table tr td img {
+  width: 80px;
+}
+/* .button-order {
+  margin-left: 955px;
+} */
+.button-order button {
+  color: #fff;
+  font-size: 1rem;
+  width: 150px;
+  height: 8vh;
+  background: #6ab804;
+  border-radius: 5px;
+  padding: 12px;
+  white-space: nowrap;
+  float: right;
+  cursor: pointer;
+}
+
+.placeOrder-header h3 {
+  font-size: 1.625rem;
+  color: #82b74b;
+  text-transform: uppercase;
+  padding: 20px 0 20px 0;
+}
+
+.number-order h4,
+p {
+  margin: 10px;
+  font-size: 1.125x;
+}
+/* .paypal {
+  padding: 0;
+  width: 20%;
+} */
+.deliver-order-button {
+  color: #fff;
+  font-size: 1rem;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  border-radius: 5px;
+  padding: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/*RESPONSIVE */
+@media (max-width: 991px) {
+  .flex-container {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 765px) {
+  .flex-container {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 450px) {
+  .flex-container {
+    width: 100%;
+    margin: 0px;
+  }
+}

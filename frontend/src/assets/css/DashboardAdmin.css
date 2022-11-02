@@ -1,0 +1,107 @@
+:root {
+  --main-color: #69b804;
+  --second-color: #e17b37;
+}
+.dashboard {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+.dashboard .row h1 {
+  color: var(--main-color);
+  padding: 20px;
+  font-size: 22px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.dashboard .row h1 button {
+  width: 5%;
+  cursor: pointer;
+  font-size: 28px;
+  border: none;
+  background: none;
+  color: var(--main-color);
+  border-radius: 30px;
+}
+.dashboard .myTable {
+  width: 100%;
+  position: relative;
+  margin: 0px 0px 80px 150px;
+  border-collapse: collapse;
+}
+.table-tr:nth-child(even) {
+  background-color: #80d90c;
+}
+
+.dashboard table tr {
+  border: 2px solid #80d90c;
+  padding: 10px;
+}
+.dashboard table tr td {
+  padding: 5px;
+  font-size: 15px;
+}
+.dashboard .myTable button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px;
+}
+.dashboard .myTable button:hover {
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+/*EDIT PRODUCT*/
+.form-edit {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  width: 330px;
+  position: absolute;
+  margin: 5em auto;
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.3);
+}
+
+/*RESPONSIVE */
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  .dashboard h1 {
+    font-size: 1.375rem;
+  }
+  .dashboard .myTable thead {
+    display: none;
+  }
+  table,
+  .myTable tbody,
+  .myTable tr,
+  .myTable td {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .myTable tr {
+    border-bottom: 1px solid #ccc;
+  }
+  .myTable td {
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+  .myTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}

@@ -1,0 +1,148 @@
+:root {
+  --main-color: #c75f1f;
+  --second-color: #e07938;
+}
+/*VALIDATION */
+/*ERROR*/
+.error-validation {
+  color: #ff0000;
+  text-align: left;
+  font-size: 11px;
+}
+.error-validation:after {
+  color: #ff0000;
+  content: '*';
+}
+.section-form {
+  overflow-x: hidden;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  background-image: url('../images/bgsignin.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+.form-signup {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  width: 330px;
+  height: 700px;
+  position: absolute;
+  margin: 5em auto;
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.3);
+}
+.form {
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  width: 330px;
+  height: 580px;
+  margin: 5em auto;
+  border-radius: 5px;
+  padding: 1em;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.header {
+  width: 220px;
+  height: 50px;
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1.375rem;
+}
+.header h2 {
+  color: #333;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p {
+  font-size: 13px;
+  color: #333;
+  line-height: 2;
+}
+.light {
+  text-align: right;
+  color: #fff;
+}
+.light a {
+  color: #333;
+}
+.bg {
+  width: 400px;
+  height: 550px;
+  position: absolute;
+  top: -5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.form-details {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* text-align: center; */
+  padding: 2em;
+}
+.form-details img {
+  margin-left: 90px;
+}
+.form-details input {
+  width: 100%;
+  padding: 13px 15px;
+  margin: 0.7em auto;
+  border-radius: 100px;
+  border: none;
+  background: rgb(255, 255, 255, 0.3);
+  outline: none;
+  color: black;
+}
+.form-details input::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+.form-details .inputs textarea {
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  width: 200px;
+  height: 10vh;
+}
+.form-details .inputs label {
+  text-align: left;
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 5px 0;
+  color: #4d4d4d;
+}
+footer-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  text-align: center;
+}
+
+.form-details button {
+  width: 100%;
+  margin-top: 50px;
+  color: #ffff;
+  font-size: 1.125rem;
+  padding: 13px 15px;
+  border-radius: 100px;
+  background-color: #69bd0f;
+  cursor: pointer;
+}
+
+.form-details button[disabled] {
+  background-color: #a0e05c;
+}
