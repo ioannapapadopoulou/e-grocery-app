@@ -39,21 +39,13 @@ function TopNav() {
               {userInfo ? (
                 <div className="wrap-infos">
                   <button className="profile" onClick={menuToggle}>
-                    <img
-                      src={UserIcon}
-                      alt="user-icon"
-                      width="30"
-                      onMouseOver={menuToggle}
-                    />
+                    <img src={UserIcon} alt="user-icon" width="30" />
                   </button>
                   <div className="top-nav">
                     <h3>
                       <Link to="#">{userInfo.name}</Link>
                     </h3>
                     <ul>
-                      {/* <li>
-                        <Link to="/profile">Profile</Link>
-                      </li> */}
                       <li>
                         <Link to="/signin" onClick={signoutHandler}>
                           Sign out
