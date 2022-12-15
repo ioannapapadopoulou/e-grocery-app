@@ -60,8 +60,6 @@ function HomePage() {
             </div>
           </section>
 
-          <Map />
-
           <section className="sectionCarouselProduct">
             <div className="header-sales">
               <h2>Sales over -10%</h2>
