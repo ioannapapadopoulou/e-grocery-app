@@ -26,13 +26,6 @@ function TopNav() {
   return (
     <div>
       <div className="container">
-        <div className="nav-cart">
-          <Link to="/cart">
-            {cartItems.length > 0 && <span>{cartItems.length}</span>}
-            <img src={CartIcon} alt="" width="30" />
-          </Link>
-        </div>
-
         <div className="topNav">
           <div className="login">
             <h4>
@@ -82,6 +75,12 @@ function TopNav() {
                 </div>
               )}
             </h4>
+          </div>
+          <div className="nav-cart">
+            <Link to="/cart">
+              {cartItems.length > 0 && <span>{cartItems.length}</span>}
+              <img src={CartIcon} alt="" width="30" />
+            </Link>
           </div>
         </div>
       </div>
