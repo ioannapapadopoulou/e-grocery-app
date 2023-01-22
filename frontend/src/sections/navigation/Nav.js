@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { Route } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { listProductCategories } from 'redux/actions/productActions';
+import MessageBox from 'components/messages/MessageBox';
+import LoadingBox from 'components/messages/LoadingBox';
+import TopNav from './TopNav';
+import Search from 'sections/search/Search';
 import Menu from 'assets/svgs/menu.svg';
 import Cancel from 'assets/svgs/cancel.svg';
-import { Link, NavLink } from 'react-router-dom';
 import 'assets/css/Nav.css';
-import LoadingBox from 'components/messages/LoadingBox';
-import { useDispatch, useSelector } from 'react-redux';
-import MessageBox from 'components/messages/MessageBox';
-import { listProductCategories } from 'redux/actions/productActions';
-import TopNav from './TopNav';
-import { Route } from 'react-router-dom/cjs/react-router-dom.min';
-import Search from 'sections/search/Search';
 
 function Nav() {
   const [sidebar, setSidebar] = useState(false);
@@ -65,16 +65,14 @@ function Nav() {
           ) : (
             categories?.map((item, index) => {
               return (
-                <>
-                  <li key={index} className="nav-text">
-                    <NavLink
-                      to={`/search/category/${item}`}
-                      className="desktop-item"
-                    >
-                      <span>{item}</span>
-                    </NavLink>
-                  </li>
-                </>
+                <li key={index} className="nav-text">
+                  <NavLink
+                    to={`/search/category/${item}`}
+                    className="desktop-item"
+                  >
+                    <span>{item}</span>
+                  </NavLink>
+                </li>
               );
             })
           )}

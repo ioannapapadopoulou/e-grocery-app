@@ -1,6 +1,6 @@
 :root {
-  --main-color: #c75f1f;
-  --second-color: #e07938;
+  --main-color: #80d90c;
+  --second-color: #80d90c;
 }
 /*VALIDATION */
 /*ERROR*/
@@ -27,7 +27,7 @@
 .form-signup {
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   width: 330px;
-  height: 700px;
+  height: 680px;
   position: absolute;
   margin: 5em auto;
   border-radius: 5px;
@@ -39,14 +39,13 @@
 .form {
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   width: 330px;
-  height: 580px;
   margin: 5em auto;
+  max-height: 580px;
   border-radius: 5px;
   padding: 1em;
   position: relative;
   overflow: hidden;
   box-shadow: 0 6px 31px -2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
 }
 .header {
   width: 220px;
