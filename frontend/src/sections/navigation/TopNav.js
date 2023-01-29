@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { signout } from 'redux/actions/userAction';
 import CartIcon from 'assets/svgs/shopping-cart.svg';
 import UserIcon from 'assets/svgs/user-icon.svg';
+import Login from 'assets/svgs/login.svg';
 import 'assets/css/Nav.css';
 
 function TopNav() {
@@ -65,17 +66,27 @@ function TopNav() {
                   </div>
                 </div>
               ) : (
-                <div className="register-login">
-                  <Link to="/signin" className="signin">
-                    Login/
-                  </Link>
-                  <Link to="/signup" className="signup">
-                    Register
-                  </Link>
-                </div>
+                <>
+                  <div className="register-login">
+                    <Link to="/signin" className="signin">
+                      Login/
+                    </Link>
+                    <Link to="/signup" className="signup">
+                      Register
+                    </Link>
+                  </div>
+                </>
               )}
             </h4>
           </div>
+          <Link to="/signin">
+            <img
+              src={Login}
+              alt="login-icon"
+              width="30"
+              className="login-icon"
+            />
+          </Link>
           <div className="nav-cart">
             <Link to="/cart">
               {cartItems.length > 0 && <span>{cartItems.length}</span>}
