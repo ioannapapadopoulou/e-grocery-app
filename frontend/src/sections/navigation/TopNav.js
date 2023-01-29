@@ -79,14 +79,17 @@ function TopNav() {
               )}
             </h4>
           </div>
-          <Link to="/signin">
-            <img
-              src={Login}
-              alt="login-icon"
-              width="30"
-              className="login-icon"
-            />
-          </Link>
+
+          {!userInfo && (
+            <Link to="/signin">
+              <img
+                src={Login}
+                alt="login-icon"
+                width="30"
+                className="login-icon"
+              />
+            </Link>
+          )}
           <div className="nav-cart">
             <Link to="/cart">
               {cartItems.length > 0 && <span>{cartItems.length}</span>}

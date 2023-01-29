@@ -177,7 +177,7 @@ span {
   right: 300px;
 }
 .container .login {
-  right: 250px;
+  right: 50px;
 }
 .profile {
   background: transparent;
@@ -278,7 +278,7 @@ span {
 }
 
 .register-login {
-  transform: translateX(-80px);
+  transform: translateX(-300px);
 }
 
 /*RESPONSIVE */
@@ -295,7 +295,9 @@ span {
     z-index: 999;
     opacity: 0;
   }
-
+  .register-login {
+    transform: translateX(-80px);
+  }
   .container .nav-cart {
     right: 50px;
   }
@@ -336,8 +338,12 @@ span {
   .container .nav-cart {
     right: 50px;
   }
-  .container .login {
+  .register-login {
     display: none;
+  }
+  .container .login {
+    display: block;
+    right: -30px;
   }
   .login-icon {
     display: block;

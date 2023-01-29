@@ -35,8 +35,8 @@ export default function CarouselProductSlider() {
         className="mySwiper"
       >
         {salesCategories?.map((cat) => (
-          <SwiperSlide key={cat}>
-            <div className="card" key={cat.id}>
+          <SwiperSlide key={cat._id}>
+            <div className="card">
               <div className="discount">
                 <h3>-{cat.sales}% off!</h3>
               </div>
