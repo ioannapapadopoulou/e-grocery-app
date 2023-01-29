@@ -1,7 +1,6 @@
 import React from 'react';
 import CarouselProductSlider from 'components/carousel/CarouselProductSlider';
 import CarouselSlider from 'components/carousel/CarouselSliderHomepage';
-import Map from 'sections/homepage/Map';
 import about from 'assets/images/about.jpg';
 import 'assets/css/HomePage.css';
 
