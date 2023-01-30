@@ -200,13 +200,13 @@ span {
 
 .top-nav h3 a {
   color: #fff;
-  margin-left: 40px;
+  margin-left: 35px;
   z-index: 99;
   border-bottom: 1px solid gray;
 }
 
 .top-nav ul li a {
-  font-size: 17px;
+  font-size: 1.1rem;
   color: #fff;
 }
 
@@ -217,7 +217,7 @@ span {
 
 .top-nav ul li {
   list-style: none;
-  direction: flex;
+  display: flex;
   align-items: center;
   position: relative;
   padding: 8px 0;
@@ -286,14 +286,6 @@ span {
   .top-nav {
     position: relative;
     padding: 5px 10px;
-    background: #f7a201;
-    width: 150px;
-    box-sizing: 0 5px 25px;
-    border-radius: 15px;
-    transition: 0.5s;
-    visibility: hidden;
-    z-index: 999;
-    opacity: 0;
   }
   .register-login {
     transform: translateX(-80px);
@@ -335,6 +327,9 @@ span {
 }
 
 @media (max-width: 574px) {
+  .top-nav {
+    width: 120px;
+  }
   .container .nav-cart {
     right: 50px;
   }

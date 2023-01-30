@@ -41,17 +41,17 @@
 }
 .dashboard table tr td {
   padding: 5px;
-  font-size: 15px;
+  font-size: 1.2rem;
 }
 .dashboard .myTable button {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 12px;
 }
 .dashboard .myTable button:hover {
-  font-size: 17px;
+  font-size: 1.2rem;
   transition: 0.2s;
 }
 
@@ -100,7 +100,7 @@
     left: 0;
     width: 50%;
     padding-left: 15px;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
     text-align: left;
   }
