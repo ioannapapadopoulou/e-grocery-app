@@ -94,6 +94,7 @@
 .nav-menu {
   background-color: #80d90c;
   width: 250px;
+  overflow: auto;
   height: 100vh;
   display: flex;
   justify-content: center;
