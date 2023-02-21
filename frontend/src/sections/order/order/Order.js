@@ -187,9 +187,9 @@ function Order(props) {
                         >
                           Deliver Order
                         </button>
-                        <p>Your order has been shipped.</p>
                       </td>
                     )}
+                    <p>Your order has been shipped.</p>
                   </td>
                 </tr>
               </table>
