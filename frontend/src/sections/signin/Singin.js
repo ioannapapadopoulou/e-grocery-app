@@ -50,7 +50,7 @@ function Singin(props) {
                 <Field
                   name="email"
                   type="email"
-                  placeholer="Email"
+                  placeholder="Email"
                   value={values.email}
                   onChange={handleChange}
                 />
@@ -60,7 +60,7 @@ function Singin(props) {
                 <Field
                   name="password"
                   type="password"
-                  placeholder="password"
+                  placeholder="Password"
                   value={values.password}
                   onChange={handleChange}
                 />

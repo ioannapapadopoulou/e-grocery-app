@@ -72,7 +72,7 @@ function Signup(props) {
                 <Field
                   name="email"
                   type="text"
-                  placeholer="Email"
+                  placeholder="Email"
                   onChange={handleChange}
                 />
 
@@ -83,7 +83,7 @@ function Signup(props) {
                 <Field
                   name="password"
                   type="password"
-                  placeholder="password"
+                  placeholder="Password"
                   onChange={handleChange}
                 />
                 {errors.password && touched.password && (
