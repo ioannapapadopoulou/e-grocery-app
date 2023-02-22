@@ -47,7 +47,7 @@
   padding: 40px calc((100% - (270px * 3)) / 4);
 }
 .card {
-  max-width: 280px;
+  max-width: 230px;
   min-height: 333px;
   flex: 0 0 215px;
   margin: 1em 20px;
@@ -96,7 +96,7 @@
   margin: 10px 20px 10px;
   padding: 8px 12px;
   width: 80%;
-  background-color:  #80d90c;
+  background-color: #80d90c;
   border-radius: 5px;
   text-align: center;
 }
