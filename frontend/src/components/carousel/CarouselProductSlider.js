@@ -32,6 +32,18 @@ export default function CarouselProductSlider() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
+        breakpoints={{
+          300: {
+            slidesPerView: 1,
+          },
+          400: {
+            slidesPerView: 1,
+          },
+          576: {
+            // width: 576,
+            slidesPerView: 3,
+          },
+        }}
         className="mySwiper"
       >
         {salesCategories?.map((cat) => (

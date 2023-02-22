@@ -80,6 +80,7 @@ function Order(props) {
   };
   const deliverOrderHandler = () => {
     dispatch(deliverdOrder(order._id));
+    <p>Your </p>;
   };
 
   return (
@@ -180,16 +181,20 @@ function Order(props) {
                             {errorDeliver}
                           </MessageBox>
                         )}
-                        <button
-                          type="button"
-                          className="deliver-order-button"
-                          onClick={deliverOrderHandler}
-                        >
-                          Deliver Order
-                        </button>
+                        {!deliverOrderHandler ? (
+                          <button
+                            type="button"
+                            className="deliver-order-button"
+                            onClick={deliverOrderHandler}
+                          >
+                            Deliver Order
+                          </button>
+                        ) : (
+                          <p>hello</p>
+                        )}
                       </td>
                     )}
-                    <p>Your order has been shipped.</p>
+                    {/* <p>Your order has been shipped.</p> */}
                   </td>
                 </tr>
               </table>

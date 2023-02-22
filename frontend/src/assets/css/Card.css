@@ -155,9 +155,21 @@
     width: 50%;
     margin-bottom: 30px;
   }
+  .header-sales h2 {
+    text-align: left;
+  }
+  .header-sales h4 {
+    text-align: left;
+  }
 }
 @media (max-width: 574px) {
   .card {
     width: 50%;
+  }
+  .header-sales h2 {
+    text-align: left;
+  }
+  .header-sales h4 {
+    text-align: left;
   }
 }
