@@ -156,7 +156,7 @@ span {
   margin-left: 16px;
 }
 .wrap-infos {
-  position: relative;
+  /* position: relative; */
   z-index: 99;
 }
 
