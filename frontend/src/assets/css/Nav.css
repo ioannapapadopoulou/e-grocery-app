@@ -39,7 +39,7 @@
   background: #7fd02c;
   box-sizing: border-box;
   border-radius: 25px;
-  border: 4px solid white;
+  border: 4px solid #ffffff;
   padding: 5px;
 }
 
@@ -56,7 +56,7 @@
   font-size: 1em;
   border-radius: 20px;
   padding: 0 20px;
-  background: white;
+  background: #ffffff;
 }
 
 .fa {
@@ -263,7 +263,7 @@ span {
 
 .nav-cart span {
   position: absolute;
-  color: white;
+  color: #ffffff;
   border-radius: 20px;
   font-size: 14px;
   top: 0px;
@@ -322,7 +322,7 @@ span {
     background: #80d90c;
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid white;
+    border: 4px solid #ffffff;
     padding: 5px;
   }
 }
@@ -370,7 +370,7 @@ span {
     background: #7fd02c;
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid white;
+    border: 4px solid #ffffff;
     padding: 5px;
   }
 }

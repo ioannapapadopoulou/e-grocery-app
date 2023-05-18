@@ -157,7 +157,7 @@
   border-bottom: 1px solid #16a085;
 }
 .flex-container table tr td {
-  /* white-space: pre-line; */
+  /* #ffffff-space: pre-line; */
   color: #151515;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -180,7 +180,7 @@
   background: #6ab804;
   border-radius: 5px;
   padding: 12px;
-  white-space: nowrap;
+  #ffffff-space: nowrap;
   float: right;
   cursor: pointer;
 }
@@ -207,7 +207,7 @@ p {
   background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
   border-radius: 5px;
   padding: 12px;
-  white-space: nowrap;
+  #ffffff-space: nowrap;
   cursor: pointer;
 }
 
